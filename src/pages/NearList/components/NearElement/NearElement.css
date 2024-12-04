@@ -1,0 +1,53 @@
+.near-element-container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    margin-bottom: 10px;
+
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #FEFEFE;
+}
+
+.near-element-container img {
+    width: 96px;
+    height: 96px;
+
+    border-radius: 10px;
+
+    margin-right: 5px;
+}
+
+.near-element-container .near-element-info {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 10px 0;
+}
+
+.near-element-container .near-element-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.near-element-container .near-element-location {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.near-element-container .near-element-next {
+    display: flex;
+
+    width: 28px;
+    height: 28px;
+
+    margin-left: auto;
+
+    align-self: center;
+}

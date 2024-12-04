@@ -9,7 +9,9 @@ export const NearbyCulturePresenter = ({
 
     isPopupOpen,
     openPopup,
-    closePopup
+    closePopup,
+
+    navigate
 }) => {
     return(
         <div>
@@ -21,6 +23,8 @@ export const NearbyCulturePresenter = ({
                 isPopupOpen = {isPopupOpen}
                 openPopup = {openPopup}
                 closePopup = {closePopup}
+
+                navigate = {navigate}
             />
         </div>
     )

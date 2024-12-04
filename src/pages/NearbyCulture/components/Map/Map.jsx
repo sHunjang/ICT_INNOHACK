@@ -9,7 +9,9 @@ import { CulturePopUp } from "../CulturePopUp/CulturePopUp";
 
 export const Map = ({
     userLocation,
-    cultureList
+    cultureList,
+
+    navigate
 }) => {
     const containerStyle = {
         width: "350px",
@@ -104,7 +106,10 @@ export const Map = ({
                 <CulturePopUp
                     isPopupOpen={isPopupOpen}
                     closePopup={closePopup}
+                    
                     culture={selectedCulture} // 선택된 문화재 데이터 전달
+
+                    navigate = {navigate}
                 />
             )}
         </div>

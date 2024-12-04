@@ -6,10 +6,13 @@ import Logo from "../../assets/Common/Local Culture.png"
 import Search from "../../assets/Common/Search_Top.png";
 
 import { Input } from "../Input/Input";
+import { useNavigate } from "react-router-dom";
 
 export const TopNav = ({
     children
 }) => {
+    const navigate = useNavigate()
+
     const [isShow, setIsShow] = useState(false)
 
     const searchShow = async () => {
@@ -25,6 +28,8 @@ export const TopNav = ({
                         src = {Logo}
 
                         alt="Logo"
+                        
+                        onClick={() => navigate('/')}
                     />
                     <img 
                         src = {Search}

@@ -1,0 +1,92 @@
+.culture-info-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-top: 2px solid rgba(0,0,0,0.5);
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+}
+
+.culture-info-container .culture-info-top {
+    width: 100%;
+
+    display: flex;
+    
+    justify-content: space-between;
+
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+}
+
+.culture-info-container .culture-info-name {
+    font-size: 20px;
+    font-weight: bold;
+
+    padding-right: 10px;
+}
+
+.culture-info-container .culture-info-image {
+    width: 16px;
+}
+
+.culture-info-container .culture-info-keyward {
+    color: #868686;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.culture-info-container .culture-info-explain {
+    display: flex;
+
+    width: 300px;
+
+    align-self: center;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.culture-info-container .culture-info-etc {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+
+    align-items: center;
+}
+
+.culture-info-container .culture-info-etc-info {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    padding: 30px;
+    box-sizing: border-box;
+
+    background-color: rgba(0,0,0,0.1);
+
+    border-radius: 20px;
+}
+
+.culture-info-container .culture-info-etc-text {
+    font-size: 16px;
+    font-weight: bold;
+
+    padding-bottom: 10px;
+}
+
+.culture-info-container .culture-info-button {
+    display: flex;
+
+    justify-content: center;
+}

@@ -1,0 +1,14 @@
+.culture-location-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.culture-location-container .culture-location-name {
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { NearbyCulturePresenter } from "./NearbyCulturePresenter";
+import { CultureLocationPresenter } from "./CultureLocationPresenter";
+import { useParams } from "react-router-dom";
 
 import { cultureList } from "../../db/cultureDB";
-import { useNavigate } from "react-router-dom";
 
-const NearbyCultureContainer = () => {
-    const navigate = useNavigate();
+const CultureLocationContainer = () => {
+    const { key } = useParams();
+
+    const culture = cultureList.find(item => item.key === parseInt(key));
 
     const [userLocation, setUserLocation] = useState(
         {
@@ -13,13 +15,8 @@ const NearbyCultureContainer = () => {
             lng : null
         }
     );
-
     const [error, setError] = useState(null);
-
-    const [isPopupOpen, setPopupOpen] = useState(false);
-
-    const openPopup = () => setPopupOpen(true);
-    const closePopup = () => setPopupOpen(false);
+    const [googleLoaded, setGoogleLoaded] = useState(false);
 
     useEffect(() => {
         (
@@ -44,20 +41,29 @@ const NearbyCultureContainer = () => {
             }
         )()
     }, [])
-    
+
+    const handleScriptLoad = () => {
+        setGoogleLoaded(true);
+    };
+
+    const getIconSize = () => {
+        if (googleLoaded) {
+            return new window.google.maps.Size(28, 28);
+        }
+        return null;
+    };
+
     return(
-        <NearbyCulturePresenter 
+        <CultureLocationPresenter 
+            culture = {culture}
+
             userLocation = {userLocation}
 
-            cultureList = {cultureList}
-
-            isPopupOpen = {isPopupOpen}
-            openPopup = {openPopup}
-            closePopup = {closePopup}
-
-            navigate = {navigate}
+            googleLoaded= {googleLoaded}
+            handleScriptLoad = {handleScriptLoad}
+            getIconSize = {getIconSize}
         />
     )
 }
 
-export default NearbyCultureContainer;
+export default CultureLocationContainer;

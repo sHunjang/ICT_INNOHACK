@@ -8,7 +8,9 @@ export const CulturePopUp = ({
     isPopupOpen,
     closePopup,
 
-    culture
+    culture,
+
+    navigate
 }) => {
     return(
         <PopUp
@@ -18,6 +20,7 @@ export const CulturePopUp = ({
             <div className="culture-popup-container">
                 <img
                     src={culture.src}
+                    onClick={() => navigate(`/culture/detail/${culture.key}`)}
                 />
                 <div className="culture-popup-info">
                     <span className="culture-popup-title">{culture.name}</span>

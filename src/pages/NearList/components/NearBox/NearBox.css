@@ -1,0 +1,17 @@
+.nearbox-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nearbox-container .nearbox-title {
+    width: 100%;
+
+    text-align: center;
+
+    padding-bottom: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
