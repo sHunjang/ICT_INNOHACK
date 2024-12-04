@@ -6,7 +6,9 @@ import { Banner } from "./components/Banner/Banner";
 import { Button } from "../../components/Button/Button";
 import { MainList } from "./components/MainList/MainList";
 
-export const MainPresenter = () => {
+export const MainPresenter = ({
+    navigate
+}) => {
     return(
         <div className="main-container">
             <Banner />
@@ -15,6 +17,8 @@ export const MainPresenter = () => {
 
                 width={"80%"}
                 height={"80px"}
+
+                onClick={() => navigate('/near')}
             />
             <MainList />
         </div>

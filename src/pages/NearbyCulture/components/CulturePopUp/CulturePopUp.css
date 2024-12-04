@@ -1,0 +1,36 @@
+.culture-popup-container {
+    display: flex;
+    
+    max-width: 400px;
+    height: auto;
+}
+
+.culture-popup-container img {
+    width: 128px;
+    height: auto;
+
+    margin-right: 15px;
+}
+
+.culture-popup-container .culture-popup-info {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+}
+
+.culture-popup-container .culture-popup-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.culture-popup-container .culture-popup-location {
+    font-size: 12px;
+    font-weight: bold;
+
+    padding-bottom: 10px;
+}
+
+.culture-popup-container .culture-popup-explain {
+    font-size: 12px;
+}
