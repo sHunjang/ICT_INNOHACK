@@ -1,0 +1,31 @@
+.topnav-container {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    flex-direction: column;
+}
+
+.topnav-container .topnav-wrap {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav-container .topnav-image {
+    width: 100%;
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
