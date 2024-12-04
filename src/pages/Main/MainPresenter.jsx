@@ -20,7 +20,9 @@ export const MainPresenter = ({
 
                 onClick={() => navigate('/near')}
             />
-            <MainList />
+            <MainList 
+                navigate={navigate}
+            />
         </div>
     )
 }

@@ -1,23 +1,37 @@
-/* ListCategory.css */
-.listcategory-container {
+.list-category-button {
+    width: 100%;
+
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap; /* 카테고리 아이템들이 세로로 쌓이지 않고 가로로 쭉 이어지도록 */
-    padding: 10px 0;
+    
+    justify-content: center;
+
+    margin-bottom: 10px;
 }
 
-.category-item {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: #333;
-    font-size: 16px;
+.list-category-button-one {
+    width: 30%;
+    height: 35px;
+
+    background: #ECECEC;
+
+    border: 1px solid #ECECEC;
+    border-radius: 10px;
+    
+    margin: 10px;
+
+    font-weight: bold;
 }
 
-.category-item.active {
-    color: #fff;
-    background-color: #007bff; /* 선택된 카테고리 스타일 */
+.list-category-button-two {
+    width: 30%;
+    height: 35px;
+
+    background: #B6BFF8;
+
+    border: 1px solid #B6BFF8;
+    border-radius: 10px;
+    
+    margin: 10px;
+
+    font-weight: bold;
 }

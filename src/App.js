@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { CultureDetail, CultureLocation, Main, NearbyCulture, NearList } from "./pages";
+import { CultureDetail, CultureLocation, List, Main, NearbyCulture, NearList } from "./pages";
 import { TopNav } from './components/TopNav/TopNav';
 import { BottomNav } from './components/BottomNav/BottomNav';
 
@@ -29,6 +29,10 @@ function App() {
         <Route 
           path='/culture/nearlist/:key/:id'
           element = {<NearList />}
+        />
+        <Route 
+          path='/culture/list/:key'
+          element = {<List />}
         />
       </Routes>
       <BottomNav />

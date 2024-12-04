@@ -1,18 +1,23 @@
 import React from "react";
 
 import "./List.css";
+import { ListBox } from "./components/ListBox/ListBox";
 
+export const ListPresenter = ({
+    keyValue,
+    navigate,
 
-import { ListItem } from "../List/components/ListItem/ListItem";
-import { BottomNav } from "../../components/BottomNav/BottomNav";
-
-
-export const ListPresenter = () => {
+    filteredList
+}) => {
     return(
         <div className="list-container">
-            
-            <ListItem />
-            <BottomNav />
+            <ListBox
+                keyValue = {keyValue}
+
+                filteredList = {filteredList}
+
+                navigate = {navigate}
+            />
         </div>
     )
 }

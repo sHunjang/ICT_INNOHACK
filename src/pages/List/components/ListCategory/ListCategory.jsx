@@ -1,27 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ListCategory.css";
 
-const categories = ["연극", "뮤지컬", "미술관", "박물관", "축제", "액티비티"];
-
-export const ListCategory = () => {
-    const [activeCategory, setActiveCategory] = useState(categories[0]);
-
-    const handleCategoryClick = (category) => {
-        setActiveCategory(category);
-        // TODO: 여기서 선택된 카테고리에 따라 데이터를 로드하는 로직 추가
-    };
-
+export const ListCategory = ({
+    keyValue, 
+    
+    navigate,
+}) => {
     return (
-        <div className="listcategory-container">
-            {categories.map((category, index) => (
-                <button
-                    key={index}
-                    className={`category-item ${category === activeCategory ? 'active' : ''}`}
-                    onClick={() => handleCategoryClick(category)}
-                >
-                    {category}
-                </button>
-            ))}
+        <div className="list-category-button">
+            <button
+                className={
+                    keyValue === "문화"
+                        ? "list-category-button-two"
+                        : "list-category-button-one"
+                }
+                onClick={() => navigate("/culture/list/문화")}
+            >
+                문화재 탐방
+            </button>
+            <button
+                className={
+                    keyValue === "예술"
+                        ? "list-category-button-two"
+                        : "list-category-button-one"
+                }
+                onClick={() => navigate("/culture/list/예술")}
+            >
+                문화 생활
+            </button>
         </div>
     );
 };
