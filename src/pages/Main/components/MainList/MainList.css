@@ -1,0 +1,20 @@
+.mainlist-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.mainlist-container .mainlist-title {
+    font-size: 24px;
+    font-weight: bold;
+
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.mainlist-container .mainlist-list {
+    display: flex;
+
+    flex-wrap: wrap;
+}
