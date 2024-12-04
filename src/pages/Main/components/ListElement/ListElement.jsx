@@ -9,6 +9,7 @@ export const ListElement = ({
         <div className="listelement-container">
             <img 
                 src={list.url}
+                alt=""
             />
             <span className="listelement-name">{list.name}</span>
         </div>
