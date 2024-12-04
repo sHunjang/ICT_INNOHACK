@@ -1,0 +1,23 @@
+/* ListCategory.css */
+.listcategory-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap; /* 카테고리 아이템들이 세로로 쌓이지 않고 가로로 쭉 이어지도록 */
+    padding: 10px 0;
+}
+
+.category-item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+}
+
+.category-item.active {
+    color: #fff;
+    background-color: #007bff; /* 선택된 카테고리 스타일 */
+}

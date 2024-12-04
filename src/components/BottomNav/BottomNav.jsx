@@ -9,7 +9,7 @@ import Profile from "../../assets/Common/Profile.png";
 import Search_Bottom from "../../assets/Common/Search_Bottom.png"; 
 
 export const BottomNav = ({
-    children
+    children,
 }) => {
     return(
         <div className="bottomnav-container">
